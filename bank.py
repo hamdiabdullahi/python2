@@ -138,9 +138,9 @@ class MobileMoneyAccount(Account):
     except TypeError:
          return f"The amount must be in figure"
     if amount>0:
-       return f"{self.name} {amount}"
+       return f"Account name{self.name}has a balance of {amount}"
     elif self.balance<amount:
-      return f"{set.balance}"
+      return f"Your current balance is {set.balance}"
     else:
        self.balance-=amount
     return f"you have brought airtime of {amount},your new balance is {self.balance}"
